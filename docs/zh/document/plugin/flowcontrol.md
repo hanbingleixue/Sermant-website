@@ -4,7 +4,7 @@
 
 ## 功能介绍
 
-流控插件基于[resilience4j](https://github.com/resilience4j) 框架，以"流量"切入点，实现"无侵入式"流量控制；当前支持**限流**、**熔断**、**隔离仓**、**错误注入**与**重试**、**熔断指标采集**、**系统规则**、**系统自适应**流控能力，并且支持配置中心动态配置规则，实时生效。
+流控插件基于[resilience4j](https://github.com/resilience4j) 框架，以"流量"切入点，实现"非侵入式"流量控制；当前支持**限流**、**熔断**、**隔离仓**、**错误注入**与**重试**、**熔断指标采集**、**系统规则**、**系统自适应**流控能力，并且支持配置中心动态配置规则，实时生效。
 
 - **限流**：对指定接口限制1S秒内通过的QPS，当1S内流量超过指定阈值，将触发流控，限制请求流量，在客户端和服务端都可生效。
 - **熔断**：对指定接口配置熔断策略，可从单位统计时间窗口内的错误率或者慢请求率进行统计，当请求错误率或者慢请求率达到指定比例阈值，即触发熔断，在时间窗口重置前，隔离所有请求，在客户端和服务端都可生效。
@@ -84,9 +84,9 @@ flow.control.plugin:
 
 流控规则是否生效取决于流量标记，当流量标记与请求相匹配，流控规则才会生效。而如何将流量标记对应上具体规则，则取决于业务场景名，通常流量标记与流控规则配置均要配置指定前缀。
 
-例如流量标记的键key需以`servicecomb.MatchGroup`为前缀, 而限流规则的键key需以`servicecomb.rateLimiting`为前缀，以一个具体的例子：
+例如流量标记的键key需以`servicecomb.matchGroup`为前缀, 而限流规则的键key需以`servicecomb.rateLimiting`为前缀，以一个具体的例子：
 
-> 流量标记配置键key为：`servicecomb.MatchGroup.flow`。
+> 流量标记配置键key为：`servicecomb.matchGroup.flow`。
 > 
 > 限流规则配置键key为：`servicecomb.rateLimiting.flow`。
 > 
@@ -96,9 +96,9 @@ flow.control.plugin:
 
 - **流量标记**
 
-  **流量标记配置键前缀:** `servicecomb.MatchGroup`
+  **流量标记配置键前缀:** `servicecomb.matchGroup`
 
-  以`zookeeper`为例，当使用`zookeeper`配置中心设置流量标记规则时，结合上述`group`和`key`的说明，需要在`zookeeper`中创建节点`/service=${spring.applicaton.name}/servicecomb.MatchGroup.${sceneName}`,节点内容为流量标记规则，如下述yaml内容。
+  以`zookeeper`为例，当使用`zookeeper`配置中心设置流量标记规则时，结合上述`group`和`key`的说明，需要在`zookeeper`中创建节点`/service=${spring.applicaton.name}/servicecomb.matchGroup.${sceneName}`,节点内容为流量标记规则，如下述yaml内容。
   
   ```yaml
   matches:            # 匹配器集合，可配置多个

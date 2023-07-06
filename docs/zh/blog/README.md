@@ -12,6 +12,27 @@ blogArr:
       - 云原生
       - 微服务治理
       - 无代理架构
+
+    - name: 【置顶】GOTC 2023 Sermant快闪演讲视频回顾
+      writer: 李来
+      date: 2023/05/30
+      description: 'Sermant受邀参与2023年GOTC全球开源技术峰会快闪演讲并分享云原生微服务治理技术的探索'
+      path: 'https://www.bilibili.com/video/BV1Gh4y1Z7eN/?vd_source=f7eed9246d1cf38f26214743df518b2d'
+      tags:
+      - 云原生
+      - 微服务治理
+      - 无代理架构
+
+    - name: 应用在虚机和容器场景下如何优雅上下线
+      writer: 罗健文 李来
+      date: 2023/05/09
+      description: '业务应用在虚机和容器场景中因业务升级等场景做下线和上线变更时，如何做到流量无损。'
+      path: 'https://my.oschina.net/u/6410005/blog/8726285'
+      tags:
+      - 容器
+      - 流量无损
+      - 优雅上下线
+
     - name: 分布式政企应用如何快速实现云原生的微服务架构改造
       writer: 杨奕
       date: 2023/04/06
@@ -21,18 +42,18 @@ blogArr:
       - 云原生
       - 微服务改造
       - 无代理架构
-    - name: Java Agent 场景性能测试分析优化经验分享
+    - name: JavaAgent 场景性能测试分析优化经验分享
       writer: 栾文飞
       date: 2023/03/03
-      description: '在 Java Agent 场景如何进行更好的性能测试优化及在 Java Agent 下需要着重注意的性能陷阱。'
+      description: '在 JavaAgent 场景如何进行更好的性能测试优化及在 JavaAgent 下需要着重注意的性能陷阱。'
       path: 'https://my.oschina.net/u/6410005/blog/8392949'
       tags:
-      - Java Agent
+      - JavaAgent
       - 性能测试优化
     - name: 记一次多个JavaAgent同时使用的类增强冲突问题及分析
       writer: 李来
       date: 2022/11/10 
-      description: 'Java Agent技术常被用于加载class文件之前进行拦截并修改字节码，以实现对Java应用的无侵入式增强。'
+      description: 'JavaAgent技术常被用于加载class文件之前进行拦截并修改字节码，以实现对Java应用的非侵入式增强。'
       path: 'https://zhuanlan.zhihu.com/p/582106446'
       tags:
       - JavaAgent

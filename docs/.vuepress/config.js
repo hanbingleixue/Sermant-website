@@ -9,12 +9,12 @@ module.exports = {
     "/zh/": {
       lang: "zh-CN",
       title: "Sermant",
-      description: "一种基于Java Agent的无代理服务网格解决方案",
+      description: "基于JavaAgent的云原生无代理服务网格",
     },
     "/en/": {
       lang: "en-US",
       title: "Sermant",
-      description: "A Proxyless Service Mesh Solution Based on Java Agent",
+      description: "A Proxyless Service Mesh Solution Based on JavaAgent",
     },
   },
   themeConfig: {

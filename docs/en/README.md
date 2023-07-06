@@ -5,15 +5,21 @@ blogs: 'Blogs'
 ---
 ::: slot feature1
 ## Non-intrusive
-Based on Java Agent bytecode enhancement technology, it provides a solution of service grid without intrusion, and 0 code completes service governance.
+Based on JavaAgent bytecode enhancement technology, it provides a solution of service grid without intrusion, and 0 code completes service governance.
 :::
 ::: slot feature2
 ## Pluggable
 Service governance function plug-in, free choice of service governance function. Plug-in ecological foundation is perfect, easy to develop.
 ::: 
 ::: slot feature3
-## Class isolation
-Class isolation technology is widely used, so there is no class conflict between framework, plug-in and host class, and developers are unaware of it.
+## High-Performance
+Proxyless architecture eliminates the need for inter-process communication, significantly reducing request latency and resource consumption.
+:::
+
+::: slot video
+## Three minutes video about Sermant promoting cloud native microservice governance technology evolution
+<iframe src="https:////player.bilibili.com/player.html?aid=529220274&bvid=BV1Uu411s7gf&cid=1146652666&page=1"
+scrolling="yes" border="0" frameborder="no" framespacing="0" allowfullscreen="true" id="sermant-video"> </iframe>
 :::
 
 ::: slot Contact

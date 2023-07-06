@@ -4,16 +4,22 @@ quickStart: '快速开始'
 blogs: '近期博文'
 ---
 ::: slot feature1
-## 无侵入
-基于Java Agent字节码增强技术，提供无侵入服务网格的解决方案，0代码完成服务治理。
+## 非侵入
+基于JavaAgent字节码增强技术，提供非侵入服务网格的解决方案，0代码完成服务治理。
 :::
 ::: slot feature2
 ## 插件化
 服务治理功能插件化，自由选择服务治理的功能。插件生态基础完善，易于开发。
 ::: 
 ::: slot feature3
-## 类隔离
-广泛采用类隔离技术，框架、插件、宿主类之间无类冲突问题，开发者无感知。
+## 高性能
+无代理架构，无需跨进程通信，大幅降低请求时延和资源占用。
+:::
+
+::: slot video
+## 三分钟了解Sermant推进云原生微服务治理技术演进
+<iframe src="https:////player.bilibili.com/player.html?aid=529220274&bvid=BV1Uu411s7gf&cid=1146652666&page=1" 
+scrolling="yes" border="0" frameborder="no" framespacing="0" allowfullscreen="true" id="sermant-video"> </iframe>
 :::
 
 ::: slot Contact

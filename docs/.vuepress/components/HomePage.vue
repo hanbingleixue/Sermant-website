@@ -55,6 +55,11 @@
             <Content slot-key="feature2"></Content>
             <Content slot-key="feature3"></Content>
           </div>
+          <div class = "video-box">
+            <Content slot-key="video"></Content>
+          </div>
+        </div>
+        <div class="footer">
           <div style="background: #EEEEEE">
             <div class="contact-box">
               <Content slot-key="Vision"></Content>
@@ -74,6 +79,9 @@
   </Base>
 </template>
 <style scoped>
+.home-page {
+  height: 100%;
+}
 .home-page .el-button--danger {
   border-color: #cc2229;
   background-color: #cc2229;
@@ -85,7 +93,15 @@
 }
 
 .content-box {
-  margin: 120px auto 20px;
+  padding: 120px 0 20px;
+  box-sizing: border-box;
+  height: calc(100% - 367px);
+  min-height: 745px;
+}
+
+.footer {
+  background: rgb(238, 238, 238);
+  padding-bottom: 16px;
 }
 
 .content {
@@ -182,6 +198,18 @@ svg {
   margin: 0 45px 20px;
 }
 
+.video-box {
+  justify-content: space-between;
+  margin: auto;
+  text-align: center;
+  height: 500px;
+  width: 60%;
+}
+
+.video-box > div {
+  margin: 0 45px 20px;
+}
+
 .contact-box {
   display: flex;
   justify-content: space-around;
@@ -212,11 +240,15 @@ svg {
   }
 }
 
-@media (max-width: 1100px) {
+@media screen and (min-width: 720px) and (max-width: 1100px) {
   .contact-box {
     flex-direction: column;
     width: auto;
     text-align: left;
+  }
+
+  .content-box {
+    min-height: 1000px;
   }
 }
 
@@ -228,7 +260,18 @@ svg {
   }
 }
 
-@media (max-width: 496px) {
+@media (max-width: 719px) {
+  .video-box {
+    margin: auto;
+    text-align: left;
+    height: 350px;
+    width: 100%
+  }
+
+  .video-box > div {
+    margin: 0 45px 20px;
+  }
+
   .logo-box {
     width: 19.84rem;
     height: 4.28rem;
@@ -239,8 +282,27 @@ svg {
     height: 4.28rem;
   }
 
+  .contact-box {
+    flex-direction: column;
+    width: auto;
+    text-align: left;
+  }
+
   .content {
     width: 20rem;
+  }
+
+  .content-box {
+    min-height: 1080px;
+  }
+
+  .button-box {
+    width: 23rem;
+    flex-wrap: wrap;
+  }
+
+  .github-box {
+    margin-top: 20px;
   }
 }
 </style>
